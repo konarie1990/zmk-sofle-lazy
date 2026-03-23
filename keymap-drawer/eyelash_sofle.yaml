@@ -50,7 +50,7 @@ layers:
   - N
   - M
   - $$mdi:arrow-up-bold$$
-  - {t: ., s: '>'}
+  - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
