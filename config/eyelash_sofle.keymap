@@ -47,38 +47,38 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        layer_0 {
             display-name = "ALPHA";
             bindings = <
-&kp GRAVE  &kp N1     &kp N2        &kp N3        &kp N4  &kp N5  &kp UP     &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp DEL
-&kp ESC    &kp Q      &kp W         &kp E         &kp R   &kp T   &kp DOWN   &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A      &kp S         &kp D         &kp F   &kp G   &kp LEFT   &kp H   &kp J   &kp K      &kp L    &kp BSLH  &kp FSLH
-&kp LSHFT  &kp Z      &kp X         &kp C         &kp V   &kp B   &kp RIGHT  &kp N   &kp M   &kp UP     &kp DOT  &kp DOT   &kp RET
-&kp C_MUTE &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp SPACE  &mkp LCLK  &kp SPACE  &mo 1   &kp LEFT  &kp DOWN  &kp RIGHT
+&kp GRAVE  &kp N1     &kp N2        &kp N3        &kp N4  &kp N5  &kp UP_ARROW    &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp DEL
+&kp ESC    &kp Q      &kp W         &kp E         &kp R   &kp T   &kp DOWN_ARROW  &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A      &kp S         &kp D         &kp F   &kp G   &kp LEFT_ARROW  &kp H   &kp J   &kp K      &kp L    &kp BSLH  &kp FSLH
+&kp LSHFT  &kp Z      &kp X         &kp C         &kp V   &kp B   &kp RIGHT_ARROW &kp N   &kp M   &kp UP_ARROW  &kp DOT  &kp DOT   &kp RET
+&kp C_MUTE &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &mo 1   &kp SPACE  &mkp LCLK    &kp SPACE  &mo 1   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        layer1 {
+        layer_1 {
             display-name = "NUM";
             bindings = <
 &trans  &trans  &trans  &trans    &trans     &trans     &mmv MOVE_UP    &trans     &trans    &trans    &trans  &trans  &trans
 &trans  &kp N1  &kp N2  &kp N3    &kp N4     &kp N5     &mmv MOVE_DOWN  &kp N6     &kp N7    &kp N8    &kp N9  &kp N0  &trans
 &trans  &trans  &trans  &trans    &kp SEMI   &kp MINUS  &mmv MOVE_LEFT  &kp EQUAL  &kp SQT   &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans    &trans     &trans     &mmv MOVE_RIGHT &trans     &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &mo 2      &trans     &mkp LCLK       &trans     &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans    &to 2      &trans     &mkp LCLK       &trans     &trans    &trans    &trans  &trans  &none
             >;
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer2 {
+        layer_2 {
             display-name = "SYS";
             bindings = <
 &none              &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &mmv MOVE_UP    &none  &none  &none      &none        &none        &none
 &ext_power EP_TOG  &bt BT_CLR       &bt BT_CLR_ALL   &out OUT_USB     &out OUT_BLE     &none            &mmv MOVE_DOWN  &none  &none  &none      &none        &none        &none
 &sys_reset         &none            &none            &none            &none            &rgb_ug RGB_BRI  &mmv MOVE_LEFT  &none  &none  &none      &none        &none        &sys_reset
 &none              &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &mmv MOVE_RIGHT &none  &none  &none      &soft_off    &bootloader  &none
-&none              &none            &none            &none            &to 0            &none            &mkp LCLK       &none  &to 0  &none      &none        &none
+&none              &none            &none            &none            &to 0            &none            &mkp LCLK       &none  &to 0  &none      &none        &none        &none
             >;
             sensor-bindings = <&scroll_encoder>;
         };
