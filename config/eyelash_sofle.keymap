@@ -37,10 +37,34 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_lbracket { timeout-ms = <50>; key-positions = <27 28>; bindings = <&kp LBKT>; layers = <1>; };
-        combo_rbracket { timeout-ms = <50>; key-positions = <35 36>; bindings = <&kp RBKT>; layers = <1>; };
-        combo_lcurly { timeout-ms = <50>; key-positions = <28 29>; bindings = <&kp LBRC>; layers = <1>; };
-        combo_rcurly { timeout-ms = <50>; key-positions = <34 35>; bindings = <&kp RBRC>; layers = <1>; };
+
+        combo_lbracket {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LBKT>;
+            layers = <1>;
+        };
+
+        combo_rbracket {
+            timeout-ms = <50>;
+            key-positions = <35 36>;
+            bindings = <&kp RBKT>;
+            layers = <1>;
+        };
+
+        combo_lcurly {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LBRC>;
+            layers = <1>;
+        };
+
+        combo_rcurly {
+            timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&kp RBRC>;
+            layers = <1>;
+        };
     };
 
     macros {
