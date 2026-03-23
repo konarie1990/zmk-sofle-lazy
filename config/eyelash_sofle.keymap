@@ -66,7 +66,7 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp MOVE_DOWN  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &trans  &trans  &trans  &trans  &kp SEMI  &kp MINUS  &mmv MOVE_LEFT  &kp EQUAL  &kp SQT  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_MUTE  &trans  &trans  &trans  &to 2  &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to 2  &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -78,7 +78,7 @@
 &ext_power EP_TOG  &bt BT_CLR  &bt BT_CLR_ALL  &out OUT_USB  &out OUT_BLE  &none  &mmv MOVE_DOWN  &none  &none  &none  &none  &none  &ext_power EP_TOG
 &sys_reset  &none  &none  &none  &none  &rgb_ug RGB_BRI  &mmv MOVE_LEFT  &none  &none  &none  &none  &none  &sys_reset
 &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &mmv MOVE_RIGHT  &none  &none  &none  &soft_off  &bootloader  &none
-&none  &none  &none  &none  &to 0  &none  &mkp LCLK  &none  &to 0  &none  &none  &none  &none
+&none  &none  &none  &none  &to 0  &none  &mkp LCLK  &none  &to 0  &none  &none  &none
             >;
             sensor-bindings = <&scroll_encoder>;
         };
