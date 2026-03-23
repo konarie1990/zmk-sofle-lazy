@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ;, s: ':'}
   - {t: '-', s: _}
