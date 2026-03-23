@@ -86,7 +86,7 @@
             bindings = <
 &trans  &trans  &trans  &trans    &trans     &trans     &mmv MOVE_UP    &trans     &trans    &trans    &trans     &trans  &trans
 &trans  &kp N1  &kp N2  &kp N3    &kp N4     &kp N5     &mmv MOVE_DOWN  &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &trans
-&trans  &trans  &trans  &trans    &kp SEMI   &kp MINUS  &mmv MOVE_LEFT  &kp EQUAL  &kp SQT   &trans    &kp LBKT   &kp RBKT  &trans
+&trans  &trans  &kp F3  &trans    &kp SEMI   &kp MINUS  &mmv MOVE_LEFT  &kp EQUAL  &kp SQT   &trans    &kp LBKT   &kp RBKT  &trans
 &trans  &trans  &trans  &trans    &trans     &trans     &mmv MOVE_RIGHT &trans     &trans    &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans    &to 2      &trans     &mkp LCLK       &trans     &trans    &trans    &trans     &trans
             >;
